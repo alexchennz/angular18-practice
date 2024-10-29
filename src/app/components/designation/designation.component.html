@@ -1,0 +1,26 @@
+<div class="row">
+  @if(isLoading){
+    <div class="col-12 text-center">
+      <div class="spinner-border"></div>
+    </div>
+  }
+  @else{
+    @for(designation of designationList; track $index){
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ designation.designation }}</h4>
+          <a
+            href="#"
+            class="card-link"
+            >Edit</a>
+          <a
+            href="#"
+            class="card-link"
+            >Delete</a>
+        </div>
+      </div>
+    </div>
+    }
+  }
+</div>

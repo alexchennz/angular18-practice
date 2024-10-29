@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-4">
+        <ul>
+            <li *ngFor="let role of roleList">{{role.role}}</li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <select name="" id="">
+            <option *ngFor="let role of roleList" [value]="role.roleId">{{role.role}}</option>
+        </select>
+    </div>
+</div>
+
+<!-- <p>roles works!</p>
+<div class="row">
+    <div class="col-3">
+        <p>firstName: {{ firstName }}</p>
+    </div>
+    <div class="col-3">
+        <p>angularVersion: {{ angularVersion }}</p>
+    </div>
+    <div class="col-3">
+        <input type="text" class="form-control" [value]="firstName">
+    </div>
+    <div class="col-3">
+        <input type="text" [(ngModel)]="firstName">
+    </div>
+    <div class="col-3">
+        <select name="" [(ngModel)]="selectedValue">
+            <option value="Angular">Angular</option>
+            <option value="React">React</option>
+            <option value="Vue">Vue</option>
+        </select>
+    </div>
+    <div class="col-3">
+        <p>selectedValue: {{ selectedValue }}</p>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-primary" (click)="showAlert()">Show Alert</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-primary" (click)="showAlertMessage('I like react')">Show React Alert</button>
+    </div>
+</div> -->
