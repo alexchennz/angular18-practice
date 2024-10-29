@@ -12,8 +12,9 @@
                             <th>Client Name</th>
                             <th>Project Name</th>
                             <th>Employer Number</th>
+                            <th>Designation</th>
                             <th>Start Date</th>
-                            <th>Actions</th>
+                            <!-- <th>Actions</th> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -23,11 +24,12 @@
                                 <td>{{clientproject.clientName}}</td>
                                 <td>{{clientproject.projectName}}</td>
                                 <td>{{clientproject.empName}}</td>
+                                <td>{{clientproject.empDesignation}}</td>
                                 <td>{{clientproject.startDate | date:'dd-MM-yyyy'}}</td>
-                                <td>
+                                <!-- <td>
                                     <button class="btn btn-primary">Edit</button>
                                     <button class="btn btn-danger">Delete</button>
-                                </td>
+                                </td> -->
                             </tr>
                         }
                     </tbody>
@@ -77,11 +79,11 @@
                         </div>
                         <div class="col-6">
                             <label for="">Total Employee Count</label>
-                            <input type="text" formControlName="totalEmpWorking" for class="form-control">
+                            <input type="number" step="1" formControlName="totalEmpWorking" for class="form-control">
                         </div>
                         <div class="col-6">
                             <label for="">Project Costing</label>
-                            <input type="text" formControlName="projectCost" class="form-control">
+                            <input type="number" step="1" formControlName="projectCost" class="form-control">
                         </div>
                         <div class="col-12">
                             <label for="">Project Details</label>

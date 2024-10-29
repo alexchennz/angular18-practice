@@ -68,6 +68,8 @@ export class ClientProjectComponent implements OnInit {
     this.clientService.addUpdateClientProjects(formValue).subscribe((res:APIResponseModel)=>{
       if(res.result){
         alert("Project Created successfully");
+        this.getAllClientProjects();
+        this.clientList = [];
       }else{
         alert(res.message);
       }
